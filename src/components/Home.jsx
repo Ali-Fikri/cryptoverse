@@ -9,7 +9,7 @@ import News from './News';
 const { Title } = Typography;
 
 const Home = () => {
-  const { data, isFetching } = useGetCryptosQuery();
+  const { data, isFetching } = useGetCryptosQuery(10);
 
   if (isFetching) return 'Loading...';
 
@@ -17,7 +17,6 @@ const Home = () => {
 
 
 
-  console.log(data)
 
   return (
     <>
