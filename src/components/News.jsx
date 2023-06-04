@@ -27,7 +27,6 @@ const News = ({ simplified }) => {
         <Col span={24}>
           <Select
             className="select-news"
-            multiple
             showSearch
             placeholder="Select a Crypto"
             optionFilterProp="children"
