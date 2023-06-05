@@ -19,6 +19,8 @@ const News = ({ simplified }) => {
     count: simplified ? 6 : 12,
   });
 
+  const style = {'max-width':'100px', 'max-height':'100px', 'border-radius':'5px'};
+
   if (!cryptoNews?.value) return "Loading...";
 
   return (
@@ -54,6 +56,7 @@ const News = ({ simplified }) => {
                   {news.name}
                 </Title>
                 <img
+                  style={style}
                   src={news?.image?.thumbnail?.contentUrl || demoImage}
                   alt="news"
                 />
